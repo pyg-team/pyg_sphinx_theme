@@ -6,6 +6,7 @@
 
 /* Remove elements */
 .wy-nav-content .wy-breadcrumbs-aside,
+.ea-placement,
 .ethical-rtd > div.ethical-sidebar,
 .ethical-rtd > div.ethical-footer {
   display: none !important;
