@@ -1,5 +1,86 @@
 @import 'theme.css';
 
-.wy-nav-side {
-  background: red;
+.rst-content a:visited {
+  color: #2980b9;  /* No visiting color */
+}
+
+/* Remove elements */
+.wy-nav-content .wy-breadcrumbs-aside,
+.ethical-rtd > div.ethical-sidebar,
+.ethical-rtd > div.ethical-footer {
+  display: none !important;
+}
+
+/* Navigation */
+.wy-side-nav-search {
+  background: rgb(243,244,247);
+}
+.wy-side-nav-search > div.version,
+.wy-side-nav-search > a {
+  color: black;
+}
+.wy-side-nav-search input[type="text"] {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: inherit;
+}
+.wy-menu-vertical li.toctree-l1.current > a {
+  border: none;
+}
+
+/* Footer */
+footer, footer a, footer a:visited {
+  color: white !important;
+}
+footer div {
+  color: grey;  /* Reset */
+}
+
+/* Titles */
+h1 {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 200;
+}
+h2,
+.rst-content .toctree-wrapper > p.caption {
+  font-family: inherit;
+  font-weight: 200;
+}
+
+/* Function Signature */
+.sig-paren {
+  padding: 0 4px;
+}
+em.sig-param span.n:first-child,
+em.sig-param span.n:nth-child(2) {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+  color: black;
+  font-style: normal;
+}
+em.sig-param span.n:nth-child(3),
+em.sig-param span.n:nth-child(3) a,
+em.sig-param span.n:nth-child(4),
+em.sig-param span.n:nth-child(4) a,
+.sig-return {
+  font-weight: normal;
+  font-style: normal;
+}
+em.sig-param span.default_value {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+  font-style: normal;
+}
+
+/* Function Details */
+html.writer-html5 .rst-content dl.field-list {
+  display: inherit;
+}
+html.writer-html5 .rst-content dl.field-list dt,
+html.writer-html5 .rst-content dl.field-list dd {
+  margin: 0;
+  padding: 0;
+}
+html.writer-html5 .rst-content dl.field-list dt {
+  text-transform: uppercase !important;
 }
