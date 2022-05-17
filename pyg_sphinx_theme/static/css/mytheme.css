@@ -12,6 +12,9 @@
 }
 
 /* Navigation */
+.logo {
+  max-height: 150px;
+}
 .wy-side-nav-search {
   background: rgb(243,244,247);
 }
