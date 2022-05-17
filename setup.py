@@ -31,8 +31,8 @@ setup(
     author_email='team@pyg.org',
     url='https://github.com/pyg-team/pyg_sphinx_theme',
     install_requires=[
-        'sphinx',
-        'sphinx_rtd_theme',
+        'sphinx>=4.0',
+        'sphinx_rtd_theme>=1.0',
     ],
     package_data={
         'pyg_sphinx_theme': [
