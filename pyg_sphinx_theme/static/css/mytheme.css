@@ -99,6 +99,9 @@ html.writer-html5 .rst-content dl.simple dt {
 .wy-table-responsive table th {
   white-space: normal;
 }
+.wy-table-responsive table td:first-child a code {
+  white-space: nowrap !important;
+}
 .wy-table-bordered-all,
 .rst-content table.docutils {
   border: none;
