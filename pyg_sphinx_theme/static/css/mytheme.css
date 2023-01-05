@@ -222,11 +222,13 @@ html.writer-html5 .rst-content table.docutils th {
 
 /* Extensions */
 
-a.pyg-button {
+a.pyg-button,
+a.btn {
+  border: none;
+  box-shadow: none;
   padding: 10px 20px;
   border-radius: 6px;
-  color: white;
-  background: rgb(30,124,221);
+  color: white !important;
   background: linear-gradient(to bottom right, rgb(59,124,221), rgb(30,124,221));
 }
 
@@ -236,10 +238,27 @@ a.pyg-button svg {
   margin-right: 5px;
 }
 
-a.pyg-button:hover {
+a.pyg-button:hover,
+a.btn:hover {
   background: linear-gradient(to bottom right, rgb(30,124,221), rgb(23,90,180));
+  transition: none;
 }
 
-a.pyg-button:visited {
-  color: white;
+a.pyg-button:visited,
+a.btn:visited {
+  color: white !important;
+  background: linear-gradient(to bottom right, rgb(59,124,221), rgb(30,124,221));
+}
+
+a.btn span.fa-arrow-circle-right {
+  margin-left: 5px;
+}
+
+a.btn span.fa-arrow-circle-left {
+  margin-right: 5px;
+}
+
+a.btn:active {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom right, rgb(30,124,221), rgb(23,90,180));
 }
