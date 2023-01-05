@@ -34,6 +34,19 @@
   border: none;
 }
 
+.wy-nav-top {
+  background: rgb(243,244,247);
+  color: #343131;
+  background-image: url(https://raw.githubusercontent.com/pyg-team/pyg_sphinx_theme/master/pyg_sphinx_theme/static/img/pyg_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px;
+}
+
+.wy-nav-top a {
+  display: none;
+}
+
 /* Footer */
 footer, footer a, footer a:visited {
   color: white !important;
