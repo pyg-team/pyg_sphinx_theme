@@ -44,10 +44,14 @@ footer div {
 
 /* Titles */
 h1 {
-  text-transform: uppercase;
   font-family: inherit;
-  font-weight: 200;
+  display: inline-block;
+  font-size: 38px;
+  background: linear-gradient(92deg,#ff8200 0%,#9b3794 32%,#512dab 52%,#1f87e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 h2,
 .rst-content .toctree-wrapper > p.caption {
   font-family: inherit;
@@ -189,6 +193,31 @@ html.writer-html5 .rst-content table.docutils th {
 }
 .highlight .c1 {
   color: #6a737d;
+}
+
+.rst-content .admonition {
+  border-radius: 6px;
+}
+
+.rst-content .admonition .admonition-title {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.rst-content .admonition.note {
+  background: linear-gradient(to bottom right, rgba(59,124,221,0.3), rgba(30,124,221,0.15));
+}
+
+.rst-content .admonition.note .admonition-title {
+  background: linear-gradient(to bottom right, rgba(23,90,180,0.3), rgba(30,124,221,0.3));
+}
+
+.rst-content .admonition.warning {
+  background: linear-gradient(to bottom right, rgba(255,185,47,0.3), rgba(255,142,38,0.15));
+}
+
+.rst-content .admonition.warning .admonition-title {
+  background: linear-gradient(to bottom right, rgba(243,113,33,0.3), rgba(255,142,38,0.3));
 }
 
 /* Extensions */
