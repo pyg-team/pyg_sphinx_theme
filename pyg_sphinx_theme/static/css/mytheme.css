@@ -190,3 +190,27 @@ html.writer-html5 .rst-content table.docutils th {
 .highlight .c1 {
   color: #6a737d;
 }
+
+/* Extensions */
+
+a.pyg-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  background: rgb(30,124,221);
+  background: linear-gradient(to bottom right, rgb(59,124,221), rgb(30,124,221));
+}
+
+a.pyg-button svg {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+a.pyg-button:hover {
+  background: linear-gradient(to bottom right, rgb(30,124,221), rgb(23,90,180));
+}
+
+a.pyg-button:visited {
+  color: white;
+}

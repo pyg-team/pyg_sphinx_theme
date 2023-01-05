@@ -23,8 +23,6 @@ def package_files(
     return paths
 
 
-print(package_files('pyg_sphinx_theme/static'))
-
 setup(
     name='pyg_sphinx_theme',
     version=__version__,
