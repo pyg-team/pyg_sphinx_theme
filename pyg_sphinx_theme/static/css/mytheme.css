@@ -43,6 +43,10 @@
   background-size: 36px;
 }
 
+.wy-nav-top {
+  padding: 0.4em .8em 0.6em;
+}
+
 .wy-nav-top a {
   display: none;
 }
