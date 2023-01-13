@@ -36,7 +36,8 @@ setup(
     package_data={
         'pyg_sphinx_theme': [
             'theme.conf',
-            *package_files('pyg_sphinx_theme/static', ['css', 'png', 'svg']),
+            *package_files('pyg_sphinx_theme/static',
+                           ['css', 'js', 'png', 'svg']),
         ]
     },
     entry_points={
