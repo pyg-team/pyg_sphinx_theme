@@ -6,8 +6,9 @@ $(document).ready(function() {
 
   // Copy text in code blocks:
   var $highlight = $("div.rst-content div.highlight");
-  $highlight.append("<span class='copy fa fa-clipboard' title='Copy to clipboard'/>");
-  $highlight.click(function() {
-    navigator.clipboard.writeText($(this).parent().text().slice(0, -2));
+  $highlight.prepend("<div class='mac-header'><span class='dot red'></span><span class='dot yellow'></span><span class='dot green'></span><span class='copy fa fa-clipboard' title='Copy to clipboard'></span></div>");
+
+  $highlight.find('span.copy').click(function() {
+    navigator.clipboard.writeText($(this).parent().parent().text().slice(0, -1));
   });
 });
