@@ -319,3 +319,17 @@ a.btn:active {
   padding: 10px 20px;
   background: linear-gradient(to bottom right, rgb(30,124,221), rgb(23,90,180));
 }
+
+/* Roles */
+span.inline-logo {
+  padding: 2px 0 0px 24px;
+  background-repeat: no-repeat;
+  background-position: 2px 0;
+}
+span.inline-logo.pyg {
+  background-image: url(../img/pyg_logo.svg);
+}
+span.inline-logo.pytorch {
+  padding-left: 20px;
+  background-image: url(../img/pytorch_logo.svg);
+}
