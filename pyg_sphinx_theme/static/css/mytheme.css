@@ -346,3 +346,12 @@ span.inline-logo.pytorch {
   padding-left: 23px;
   background-image: url(../img/pytorch_logo.svg);
 }
+
+/* Monospace fonts */
+.pyg-mono {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
+}
+h1.pyg-mono,
+h1 span.pyg-mono {
+  letter-spacing: -1px;
+}

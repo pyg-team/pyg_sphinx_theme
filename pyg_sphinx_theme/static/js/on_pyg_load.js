@@ -12,4 +12,21 @@ $(document).ready(function() {
   $highlight.find('span.copy').click(function() {
     navigator.clipboard.writeText($(this).parent().parent().text().slice(0, -1));
   });
+
+  // Set monospace fonts:
+  addMonospaceFont("li a");
+  addMonospaceFont("li.breadcrumb-item");
+  addMonospaceFont("div.rst-content h1");
 });
+
+function addMonospaceFont(selector) {
+  $(selector).each(function(i) {
+    var text = $(this).text();
+    if (text.startsWith("torch_geometric") || text.startsWith("pyg_lib")) {
+      $(this).addClass("pyg-mono");
+    }
+    else if (text.startsWith("Source code")) {
+      $(this).html(`${text.substr(0,16)}<span class="pyg-mono">${text.substr(16)}</span>`);
+    }
+  });
+}
