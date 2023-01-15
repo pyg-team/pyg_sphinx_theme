@@ -328,23 +328,27 @@ a.btn:active {
 
 /* Roles */
 span.inline-logo {
-  padding: 0px 0 2px 26px;
+  padding: 0px 0 2px 28px;
   background-repeat: no-repeat;
   background-position: 3px 0;
   background-size: auto 100%;
-}
-@-moz-document url-prefix() {
-span.inline-logo {
-  padding-top: 2px;
-  padding-bottom: 0;
-}
 }
 span.inline-logo.pyg {
   background-image: url(../img/pyg_logo.svg);
 }
 span.inline-logo.pytorch {
-  padding-left: 23px;
+  padding-left: 24px;
   background-image: url(../img/pytorch_logo.svg);
+}
+@-moz-document url-prefix() {
+span.inline-logo {
+  padding-top: 2px;
+  padding-bottom: 0;
+  padding-left: 26px;
+}
+span.inline-logo.pytorch {
+  padding-left: 22px;
+}
 }
 
 /* Monospace fonts */
