@@ -24,6 +24,14 @@ function addMonospaceFont(selector) {
     var text = $(this).text();
     if (text.startsWith("torch_geometric") || text.startsWith("pyg_lib")) {
       $(this).addClass("pyg-mono");
+
+      // Delete main package names:
+      text = $(this).contents()[0].textContent;
+      var packages = text.split('.');
+      if (packages.length > 2) {
+        text = packages.slice(2).join('.')
+        $(this).contents()[0].textContent = text;
+      }
     }
     else if (text.startsWith("Source code")) {
       $(this).html(`${text.substr(0,16)}<span class="pyg-mono">${text.substr(16)}</span>`);
