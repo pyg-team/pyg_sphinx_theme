@@ -337,7 +337,7 @@ span.inline-logo.pyg {
   background-image: url(../img/pyg_logo.svg);
 }
 span.inline-logo.pytorch {
-  padding-left: 23px;
+  padding-left: 24px;
   background-image: url(../img/pytorch_logo.svg);
 }
 @-moz-document url-prefix() {
