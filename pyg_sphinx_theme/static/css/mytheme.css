@@ -63,6 +63,7 @@ footer div {
 h1 {
   font-family: inherit;
   display: inline-block;
+  max-width: 100%;
   font-size: 38px;
   overflow-wrap: break-word;
   background: linear-gradient(92deg,#ff8200 0%,#9b3794 32%,#512dab 52%,#1f87e6 100%);
