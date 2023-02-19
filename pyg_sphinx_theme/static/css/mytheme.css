@@ -339,6 +339,12 @@ span.inline-logo {
   background-position: 2px 50%;
   background-size: auto 90%;
 }
+span.inline-logo.empty {
+  margin-right: -4px;
+}
+span.inline-logo.empty:before {
+  content: "\200b"; // unicode zero width space character
+}
 @-moz-document url-prefix() {
 span.inline-logo {
   background-position: 2px 0;
