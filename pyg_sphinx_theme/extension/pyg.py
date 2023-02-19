@@ -143,6 +143,7 @@ def setup(app):
     app.add_role('stanford', logo_role)
     app.add_role('slack', logo_role)
     app.add_role('captum', logo_role)
+    app.add_role('ogb', logo_role)
 
     app.add_js_file('js/on_pyg_load.js')
 

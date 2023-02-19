@@ -347,7 +347,7 @@ span.inline-logo.empty:before {
 }
 @-moz-document url-prefix() {
 span.inline-logo {
-  background-position: 2px 0;
+  background-position-y: 0;
 }
 }
 span.inline-logo.pyg {
@@ -385,10 +385,19 @@ span.inline-logo.slack {
 span.inline-logo.captum {
   background-image: url(../img/captum_logo.png);
 }
+span.inline-logo.ogb {
+  padding-left: 52px;
+  background-image: url(../img/ogb_logo.png);
+  background-size: auto 70%;
+  background-position-x: 0;
+}
 @-moz-document url-prefix() {
 span.inline-logo.colab,
 span.inline-logo.wandb {
-  background-position: 2px 20%;
+  background-position-y: 20%;
+}
+span.inline-logo.ogb {
+  background-position-y: 25%;
 }
 }
 
