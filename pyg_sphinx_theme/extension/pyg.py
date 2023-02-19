@@ -132,10 +132,17 @@ def setup(app):
     autosummary.find_autosummary_in_lines = (
         monkey_patch_find_autosummary_in_lines)
 
-    app.add_directive('slack', SlackButton)
+    app.add_directive('slack_button', SlackButton)
 
     app.add_role('pyg', logo_role)
     app.add_role('pytorch', logo_role)
+    app.add_role('colab', logo_role)
+    app.add_role('github', logo_role)
+    app.add_role('lightning', logo_role)
+    app.add_role('wandb', logo_role)
+    app.add_role('stanford', logo_role)
+    app.add_role('slack', logo_role)
+    app.add_role('captum', logo_role)
 
     app.add_js_file('js/on_pyg_load.js')
 
