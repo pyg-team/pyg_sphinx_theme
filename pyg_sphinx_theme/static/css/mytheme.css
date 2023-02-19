@@ -333,26 +333,56 @@ a.btn:active {
 
 /* Roles */
 span.inline-logo {
-  padding: 0px 0 2px 28px;
+  display: inline-block;
+  padding-left: 27px;
   background-repeat: no-repeat;
-  background-position: 3px 0;
-  background-size: auto 100%;
+  background-position: 2px 50%;
+  background-size: auto 90%;
+}
+@-moz-document url-prefix() {
+span.inline-logo {
+  background-position: 2px 0;
+}
 }
 span.inline-logo.pyg {
+  padding-left: 28px;
   background-image: url(../img/pyg_logo.svg);
 }
 span.inline-logo.pytorch {
   padding-left: 24px;
   background-image: url(../img/pytorch_logo.svg);
 }
-@-moz-document url-prefix() {
-span.inline-logo {
-  padding-top: 2px;
-  padding-bottom: 0;
-  padding-left: 26px;
+span.inline-logo.colab {
+  padding-left: 39px;
+  background-image: url(../img/colab_logo.svg);
+  background-size: auto 80%;
 }
-span.inline-logo.pytorch {
-  padding-left: 22px;
+span.inline-logo.github {
+  background-image: url(../img/github_logo.svg);
+}
+span.inline-logo.lightning {
+  padding-left: 25px;
+  background-image: url(../img/lightning_logo.svg);
+}
+span.inline-logo.wandb {
+  background-size: auto 80%;
+  background-image: url(../img/wandb_logo.svg);
+}
+span.inline-logo.stanford {
+  padding-left: 20px;
+  background-image: url(../img/stanford_logo.svg);
+}
+span.inline-logo.slack {
+  padding-left: 28px;
+  background-image: url(../img/slack_logo.svg);
+}
+span.inline-logo.captum {
+  background-image: url(../img/captum_logo.png);
+}
+@-moz-document url-prefix() {
+span.inline-logo.colab,
+span.inline-logo.wandb {
+  background-position: 2px 20%;
 }
 }
 
