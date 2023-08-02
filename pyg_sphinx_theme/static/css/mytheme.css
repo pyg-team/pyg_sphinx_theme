@@ -420,3 +420,53 @@ h1.pyg-mono,
 h1 span.pyg-mono {
   letter-spacing: -1px;
 }
+
+/* Gallery */
+
+.nbsphinx-gallery {
+  margin-bottom: 36px !important;
+  gap: 20px !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+
+.nbsphinx-gallery > a {
+  background: white;
+  border: 2px solid rgb(236,236,236) !important;
+  font-weight: 200;
+  font-size: 150%;
+  color: #404040 !important;
+  padding: 0px !important;
+  padding-top: 15px !important;
+  transition: 0.4s;
+  position: relative;
+}
+
+.nbsphinx-gallery > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background: #3091d1;
+  transition: 0.4s;
+}
+
+.nbsphinx-gallery > a div:last-child {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgb(236,236,236);
+  transition: 0.4s;
+}
+
+.nbsphinx-gallery > a:hover {
+  border-color: rgb(212,212,212) !important;
+}
+
+.nbsphinx-gallery > a:hover:after {
+  width: 100%;
+}
+
+.nbsphinx-gallery > a:hover div:last-child {
+  background: rgb(212,212,212);
+}
