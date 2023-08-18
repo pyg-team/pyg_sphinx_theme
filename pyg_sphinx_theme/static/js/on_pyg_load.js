@@ -22,7 +22,7 @@ $(document).ready(function() {
 function addMonospaceFont(selector) {
   $(selector).each(function(i) {
     var text = $(this).text();
-    if (text.startsWith("torch_geometric") || text.startsWith("pyg_lib")) {
+    if (text.startsWith("torch_geometric") || text.startsWith("pyg_lib") || text.startsWith("torch_frame")) {
       $(this).addClass("pyg-mono");
 
       // Delete main package names:
