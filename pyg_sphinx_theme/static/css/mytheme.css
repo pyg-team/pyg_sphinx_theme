@@ -439,6 +439,8 @@ h1 span.pyg-mono {
   padding-top: 15px !important;
   transition: 0.4s;
   position: relative;
+  display: flex;
+  flex-flow: column;
 }
 
 .nbsphinx-gallery > a:after {
@@ -453,10 +455,15 @@ h1 span.pyg-mono {
 }
 
 .nbsphinx-gallery > a div:last-child {
+  flex: 1 1 auto;
   margin-top: 15px;
   padding: 10px;
   background: rgb(236,236,236);
   transition: 0.4s;
+
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
 }
 
 .nbsphinx-gallery > a:hover {
