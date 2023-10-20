@@ -136,6 +136,8 @@ def setup(app):
 
     app.add_role('pyg', logo_role)
     app.add_role('pyf', logo_role)
+    app.add_role('python', logo_role)
+    app.add_role('conda', logo_role)
     app.add_role('pytorch', logo_role)
     app.add_role('colab', logo_role)
     app.add_role('github', logo_role)
