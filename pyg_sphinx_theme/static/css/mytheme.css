@@ -361,6 +361,15 @@ span.inline-logo.pyf {
   padding-left: 24px;
   background-image: url(../img/pytorch_frame_logo.svg);
 }
+span.inline-logo.python {
+  padding-left: 24px;
+  background-image: url(../img/python_logo.svg);
+  background-position-y: 2px;
+}
+span.inline-logo.conda {
+  padding-left: 26px;
+  background-image: url(../img/conda_logo.svg);
+}
 span.inline-logo.pytorch {
   padding-left: 24px;
   background-image: url(../img/pytorch_logo.svg);
