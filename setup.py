@@ -5,7 +5,7 @@ from typing import List, Optional
 
 from setuptools import find_packages, setup
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def package_files(
@@ -32,6 +32,7 @@ setup(
     install_requires=[
         'sphinx==5.1.1',
         'sphinx_rtd_theme>=1.0',
+        'nbsphinx',
     ],
     package_data={
         'pyg_sphinx_theme': [
