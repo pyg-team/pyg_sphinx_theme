@@ -32,6 +32,8 @@ setup(
     install_requires=[
         'sphinx==5.1.1',
         'sphinx_rtd_theme>=1.0',
+        'sphinx-copybutton',
+        'sphinx-autodoc-typehints',
         'nbsphinx',
     ],
     package_data={
