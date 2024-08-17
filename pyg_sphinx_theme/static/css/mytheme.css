@@ -202,20 +202,20 @@ div.highlight:hover div.mac-header span.dot.yellow {
 div.highlight:hover div.mac-header span.dot.green {
   background: rgb(41,193,68);
 }
-div.highlight div.mac-header span.copy {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 6px 12px;
-  font-size: 18px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.1);
+div.highlight button.copybtn {
+  height: 26px;
+  width: 26px;
+  top: 3px;
+  right: 3px;
 }
-div.highlight div.mac-header span.copy:hover {
-  color: rgba(0,0,0,0.5);
+div.highlight button.copybtn svg {
+  height: 24px;
+  width: 24px;
+  padding: 2px;
 }
-div.highlight div.mac-header span.copy:active {
-  color: rgb(30,124,221);
+.o-tooltip--left:after {
+  top: 2px;
+  left: -5px !important;
 }
 .rst-content code.xref {
   padding: .2em .4em;
