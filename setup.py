@@ -5,7 +5,7 @@ from typing import List, Optional
 
 from setuptools import find_packages, setup
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def package_files(
@@ -34,6 +34,7 @@ setup(
         'sphinx_rtd_theme>=1.0',
         'sphinx-copybutton',
         'sphinx-autodoc-typehints==1.19.2',
+        'nbsphinx',
     ],
     package_data={
         'pyg_sphinx_theme': [
