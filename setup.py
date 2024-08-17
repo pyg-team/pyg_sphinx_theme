@@ -33,7 +33,7 @@ setup(
         'sphinx==5.1.1',
         'sphinx_rtd_theme>=1.0',
         'sphinx-copybutton',
-        'sphinx-autodoc-typehints',
+        'sphinx-autodoc-typehints==1.19.2',
     ],
     package_data={
         'pyg_sphinx_theme': [
