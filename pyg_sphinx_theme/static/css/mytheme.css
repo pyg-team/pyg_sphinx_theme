@@ -412,6 +412,9 @@ span.inline-logo.youtube {
   background-size: auto 70%;
   background-image: url(../img/youtube_logo.svg);
 }
+span.inline-logo.tgp {
+  background-image: url(../img/tgp_logo.svg);
+}
 @-moz-document url-prefix() {
 span.inline-logo.colab,
 span.inline-logo.wandb {
