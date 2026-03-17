@@ -148,6 +148,7 @@ def setup(app):
     app.add_role('captum', logo_role)
     app.add_role('ogb', logo_role)
     app.add_role('youtube', logo_role)
+    app.add_role('tgp', logo_role)
 
     app.add_js_file('js/on_pyg_load.js')
 
